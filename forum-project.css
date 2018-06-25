@@ -1,0 +1,924 @@
+
+
+/***********************
+Grid Layout
+************************/
+html, body {
+	background: default;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.page-container{
+	/*max-width: 1020px;*/
+	margin: auto; 
+}
+
+
+/*.row {
+	width: 95%;
+	margin: auto;
+	padding-top: 50px;
+	overflow: auto;
+}
+*/
+
+.row {
+	width: 100%;
+	/*max-width: 1000px;*/
+	/*margin: auto;*/
+	/*padding-top: 50px;*/
+	overflow: auto;
+}
+
+.col {
+	float: left;
+	margin: 0 1% 0 0;
+}
+
+ .col1, .col2, .col3, .col4,
+ .col5, .col6, .col7, .col8,
+ .col9, .col10, .col11{
+	float: left;
+	margin-right: 0%;
+}
+
+.col1 {width: 8.33%;}
+.col2 {width: 16.66%;}
+.col3 {width: 25%;}
+.col4 {width: 33.33%;}
+.col5 {width: 41.66%;}
+.col6 {width: 50%;}
+.col7 {width: 58.33%;}
+.col8 {width: 66.66%;}
+.col9 {width: 75%;}
+.col10 {width: 83.33%;}
+.col11 {width: 91.66%;}
+.col12 {width: 100%;} 
+
+
+
+.last{
+	margin-right: 0;
+	
+}
+
+
+/******************************
+*styles to show boxes
+*/
+
+.box{
+	margin-top: 1.5px;
+	border: solid 2px black;
+	background: #f2f2f2;
+	height: 25px;
+	text-align: center;
+	font-family:  "Lucida Console";
+	border-radius: 5px;
+	padding-top: 2px;
+}
+
+/*end of grid layout */
+
+/*main background colour for the website*/
+body{
+	background: #ccefff
+}
+
+/*hides the phone dispaly title on desktop version*/
+.phone-title img{
+	display: none;
+}
+
+/*title is for the top banner that contains the logo and the website name*/
+ .title img{
+	 float: left;
+	 background: #f2f2f2;
+	 height: 100%;
+	 width: 100%;
+ }
+
+.title { 
+	margin-top: 67px;
+	}
+ 
+ 
+ .title h2{
+	background: #33ccff;
+	color: black;
+	font-size: 65px;
+	height: 100%;
+	font-family:  "Lucida Console";
+	text-align: center;
+	margin: 0px;
+	border: solid 2px black;
+	border-radius:10px;
+	width: 100%;
+}
+
+/*thsi is the search and menu bar that is fixed at the top of the page*/
+.top-bar{
+	background: #33ccff;
+	height: 48px;
+	border-radius: 10px;
+	border: solid 2px black;
+	position: fixed;
+	z-index: 10;
+	width:100%;
+	opacity: 0.72;
+}
+
+.top-bar:hover{
+	opacity: 1;
+	}
+
+/*search bar*/
+.search input[type=text] {
+	border: solid 2px black;
+	background:  #f2f2f2;
+	height: 30px;
+	text-align: left;
+	font-family:  "Lucida Console";
+	border-radius: 5px;
+	padding-left: 20px;
+	margin-top: 11.5px;
+	width: 98%;
+	margin-left: 2%;
+}
+
+
+.top-bar button {
+	color: black;
+	background: #f2f2f2;
+	text-align: center;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family:  "Lucida Console";
+	height: 30px;
+	width: 100%;
+	margin-top: 11.5px;
+}
+
+
+.top-bar button:hover {
+	background-color: #005ce6;
+    color: #f2f2f2;
+}
+
+/*this is for the mobile site navigation bar*/
+.mobileNav{
+	display: none;
+	background: #33ccff;
+	height: 43px;
+	border-radius: 10px;
+	border: solid 2px black;
+	position: fixed;
+	z-index: 10;
+	width:100%;
+	opacity: 0.72;;
+}
+
+/*for the anchors*/
+a {
+	color: black;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family:  "Lucida Console";
+}
+
+
+/*generic page breaks*/
+.pagebreak{
+	height:50px;
+	background: #ccefff;
+}
+
+
+/*desgin for all of the sub-headings*/
+.sub-heading button{
+	border: solid 2px black;
+	background: #33ccff;
+	height: 60px;
+	text-align: left;
+	font-family:  "Lucida Console";
+	padding-left: 20px;
+	border-radius: 10px;
+	padding-right: 40px;
+}
+ 
+ /*dsign for all the photos*/
+.photo{
+	border: solid 1px black;
+	border-radius: 5px;
+	margin-top: 20px;
+	background: #ccefff;
+}
+
+/*for the categories (c#, java and web on the homepage)*/
+.categories {
+	border: solid 2px black;
+	background: #33ccff;
+	height: 60px;
+	text-align: center;
+	font-family:  "Lucida Console";
+	border-radius: 5px;
+	padding-top: 15px
+}
+
+/*for all of the buttons on the homepage*/
+button {
+	border: solid 2px black;
+	background: #33ccff;
+	height: 60px;
+	text-align: center;
+	font-family:  "Lucida Console";
+	border-radius: 5px;
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	transition-duration: 0.4s;
+}
+
+/*sorting the hover for buttons*/
+button:hover {
+	background-color: #005ce6;
+    color: #33ccff;
+}
+
+
+/*the forum buttons and for the users button*/
+.forum button{
+	border: solid 2px black;
+	background: #33ccff;
+	height: 60px;
+	text-align: center;
+	font-family:  "Lucida Console";
+	border-radius: 5px;
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	transition-duration: 0.4s;
+	margin-top: 20px;
+	height: 100px;
+}
+
+.forum button:hover {
+	background-color: #005ce6;
+    color: #33ccff;
+}
+
+/*design for the veiws, likes and comments*/
+.vlc1{
+	margin-top: 20px;
+	margin-right: 10px;
+	padding-top: 15px;
+	background:  #33ccff;
+	border-radius: 5px;
+	text-align: center;
+	height: 100px;
+	font-family:  "Lucida Console";
+	width: 120px;
+	opacity: 0.95;
+}
+
+
+.vlc1:hover{
+	background-color: #005ce6;
+    color: #33ccff;
+	border: solid 3px black;
+}
+
+
+
+.vlc{
+	margin-top: 20px;
+	margin-right: 10px;
+	padding-top: 15px;
+	background:  #33ccff;
+	border-radius: 5px;
+	text-align: center;
+	height: 100px;
+	font-family:  "Lucida Console";
+	width: 120px;
+	opacity: 0.95;
+}
+
+
+.vlc:hover{
+	background-color: #005ce6;
+    color: #33ccff;
+	border: solid 3px black;
+}
+
+.users {
+	margin-top: 20px;
+	height: 100px;
+	background: #33ccff;
+	text-align: center;
+	border-radius: 5px;
+	border: solid 1px black;
+	font-family:  "Lucida Console";
+	padding-top: 12px;
+	font-size: 13px;
+}
+
+/*the adverts for the otehr websites */
+.adverts img{
+	margin-right: 5px;
+	width: 95%;
+	height: 200px;
+}
+
+.adverts img:hover{
+	border: solid 3px #33ccff;
+}
+
+/*design for the footer*/
+.footer{
+	margin-right: 15px;
+	text-align: center;
+}
+
+.footer a {
+	color: black;
+	text-align: center;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family:  "Lucida Console";
+}
+
+.footer a:hover{
+	color: #005ce6;
+}
+
+
+/*below is the design for the tablet size screen*/
+
+
+@media only screen and (max-width: 1024px){
+.col1, .col2, .col3, .col4,.col5, .col6,
+.col7, .col8, .col9, .col10, .col11, .col12{
+float: none;
+width: 100%;
+margin-top: 3px;
+}
+.logo{
+float: none;
+display: block;
+margin: auto;
+ }
+ 
+.top-bar {
+	 display: none;
+}
+
+
+.mobileNav{
+	display: block;
+	background: #33ccff;
+	height: 70px;
+	border-radius: 10px;
+	border: solid 2px black;
+	position: fixed;
+	z-index: 10;
+	width:100%;
+	opacity: 0.72;
+	padding-top: 2px;
+}
+
+.mobileNav  img{
+	display: inline;
+	float: left;
+	width: auto;
+	height: auto;
+	margin-left: 7px;
+	margin-top: 3px;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #33ccff;
+    color: white;
+    font-size: 16px;
+    border: none;
+	width: auto;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+	font-size: 15px;
+    display: block;
+	float: left;
+	width:240px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #33ccff;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #f1f1f1;}
+
+
+
+.mobileNav a{
+	float: left;
+	margin: 0px;
+}
+
+
+.pagebreak{
+	height:35px;
+	background: #ccefff;
+}
+
+.phone-title img{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 135px;
+	height: 135px;
+	margin-top:85px;
+}
+
+
+.searchsmall input[type=text] {
+	margin-top: 10px;
+	border: solid 2px black;
+	background:  #f2f2f2;
+	height: 43px;
+	text-align: left;
+	font-family:  "Lucida Console";
+	border-radius: 5px;
+	padding-left: 20px;
+	width: 82%;
+	float: right;
+}
+
+
+.title img{
+	display: none;
+	margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ .title h2{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	height: 70px;
+	width: 90%;
+	font-size: 23px;
+	font-weight: bold;
+ } 
+ 
+ .sub-heading{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 70%;
+	font-size: 15px;
+	text-align: center;
+	height: 65px;
+ }
+ 
+ .title{
+	 margin-top: 20px;
+ }
+ 
+.photo{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 27%;
+}
+
+.sub-heading button{
+	border: solid 2px black;
+	background: #33ccff;
+	height: 60px;
+	text-align: center;
+	font-family:  "Lucida Console";
+	font-size: 20px;
+	padding-left: 20px;
+	border-radius: 10px;
+	padding-right: 40px;
+}
+
+button:hover {
+	background-color: #005ce6;
+    color: #33ccff;
+}
+
+.forum button{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 35%;
+}
+
+.vlc{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+	background:  #33ccff;
+	border-radius: 5px;
+	text-align: center;
+	height: auto;
+	font-family:  "Lucida Console";
+	font-size: 12px;
+	width: 10%;
+	opacity: 0.95;
+}
+
+
+.vlc:hover{
+	background-color: #005ce6;
+    color: #33ccff;
+	border: solid 3px black;
+}
+
+.vlc1 {
+	display: inline-block;
+	margin-left: 35%;
+	margin-right: auto;
+	padding-top: 15px;
+	background:  #33ccff;
+	border-radius: 5px;
+	text-align: center;
+	height: auto;
+	font-family:  "Lucida Console";
+	font-size: 12px;
+	width: 10%;
+	opacity: 0.95;
+}
+
+
+.vlc1:hover{
+	background-color: #005ce6;
+    color: #33ccff;
+	border: solid 3px black;
+}
+
+
+
+.adverts img{
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+	margin-bottom: 15px;
+	width: 25%;
+	height: 150px;
+}
+
+.adverts img:hover{
+	border: solid 3px #33ccff;
+}
+
+
+/*.footer{
+	color: black;
+	text-align: center;
+	font-size: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family:  "Lucida Console";
+	margin-bottom: 10px;
+}*/
+
+.footer{
+	margin-right: 15px;
+	text-align: center;
+}
+
+.footer a {
+	color: black;
+	text-align: center;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family:  "Lucida Console";
+}
+
+.footer a:hover{
+	color: #005ce6;
+}
+
+
+
+
+
+
+
+/*below is for the phone size screen*/
+
+
+
+
+@media only screen and (max-width: 640px){
+.col1, .col2, .col3, .col4,
+.col5, .col6, .col7, .col8,
+.col9, .col10, .col11, .col12{
+float: none;
+width: 100%;
+margin-top: 3px;
+}    
+          
+.logo{
+float: none;
+display: block;
+margin: auto;
+ }
+ 
+.top-bar {
+	 display: none;
+}
+
+
+.mobileNav{
+	display: block;
+	background: #33ccff;
+	height: 70px;
+	border-radius: 10px;
+	border: solid 2px black;
+	position: fixed;
+	z-index: 10;
+	width:100%;
+	opacity: 0.72;
+	padding-top: 2px;
+}
+
+.mobileNav  img{
+	display: inline;
+	float: left;
+	width: auto;
+	height: auto;
+	margin-left: 7px;
+	margin-top: 3px;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #33ccff;
+    color: white;
+    font-size: 16px;
+    border: none;
+	width: auto;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+	font-size: 15px;
+    display: block;
+	float: left;
+	width:200px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #33ccff;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #f1f1f1;}
+
+
+
+.mobileNav a{
+	float: left;
+	margin: 0px;
+}
+
+.pagebreak{
+	height:35px;
+	background: #ccefff;
+}
+
+.phone-title img{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 135px;
+	height: 135px;
+	margin-top:85px;
+}
+
+
+.searchsmall input[type=text] {
+	margin-top: 10px;
+	border: solid 2px black;
+	background:  #f2f2f2;
+	height: 43px;
+	text-align: left;
+	font-family:  "Lucida Console";
+	border-radius: 5px;
+	padding-left: 20px;
+	width: 71%;
+	float: right;
+}
+
+
+.title img{
+	display: none;
+	margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ 
+ .title h2{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	height: 70px;
+	width: 90%;
+	font-size: 23px;
+	font-weight: bold;
+ } 
+ 
+ .sub-heading{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 70%;
+	font-size: 15px;
+	text-align: center;
+	height: 65px;
+ }
+ 
+ 
+ .title{
+	 margin-top: 20px;
+ }
+ 
+.photo{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 50%;
+}
+
+.sub-heading button{
+	border: solid 2px black;
+	background: #33ccff;
+	height: 60px;
+	text-align: center;
+	font-family:  "Lucida Console";
+	font-size: 20px;
+	padding-left: 20px;
+	border-radius: 10px;
+	padding-right: 40px;
+}
+
+button:hover {
+	background-color: #005ce6;
+    color: #33ccff;
+}
+
+.forum button{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 44%;
+}
+
+/*.vlc{
+	display: none;
+}
+
+.vlc1{
+	display: none;
+}*/
+
+.vlc{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+	background:  #33ccff;
+	border-radius: 5px;
+	text-align: center;
+	height: auto;
+	font-family:  "Lucida Console";
+	font-size: 10px;
+	width: 10%;
+	opacity: 0.95;
+}
+
+
+.vlc:hover{
+	background-color: #005ce6;
+    color: #33ccff;
+	border: solid 3px black;
+}
+
+.vlc1 {
+	display: inline-block;
+	margin-left: 35%;
+	margin-right: auto;
+	padding-top: 15px;
+	background:  #33ccff;
+	border-radius: 5px;
+	text-align: center;
+	height: auto;
+	font-family:  "Lucida Console";
+	font-size:10px;
+	width: 10%;
+	opacity: 0.95;
+}
+
+
+.vlc1:hover{
+	background-color: #005ce6;
+    color: #33ccff;
+	border: solid 3px black;
+}
+
+
+
+
+.adverts img{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+	width: 30%;
+	height: 150px;
+}
+
+.adverts img:hover{
+	border: solid 3px #33ccff;
+}
+
+
+.footer{
+	color: black;
+	text-align: center;
+	font-size: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family:  "Lucida Console";
+	margin-bottom: 10px;
+}
+
+
+
+
+}
+
+
+
+
